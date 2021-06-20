@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+}
+.menu_container  {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: #7A246F;
+
+    z-index: 1000;
+
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 10px 10px 0;
+
+    padding: 2rem;
+
+    width: 100vw;
+	height: 100vh;
+		
+	display: none;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+		
+		 
+	overflow-y: scroll;
+		 
+	transform: translateX(-5000px);
+		 
+	transition: .5s;
+
+	z-index: 10000;
+}
+.on {
+    display: flex;
+	transition: .5s;
+	transform: translateX(0px)
+	
+}
+.menu_container  li,a {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+
+
+.close {
+   
+    position: absolute;
+    width: 28px;
+    height: 28px;
+
+    top: 3%;
+    left: 5%;
+
+    cursor: pointer;
+}
+body{
+    background-color: #edf0f1;
+
+}
+
+
+.a, button#contato{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #228B22;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.568);
+}
+.nav_links{
+    position: relative;
+    list-style: none;
+}
+.nav_links .main{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav_links .main .a{
+    padding: 15px 10px;
+    font-size: 10px;
+}
+.nav_links .main:hover .a{
+    transition: all 0.3s ease 0s;
+    background-color: #970397cb;
+    color: white;
+}
+button#contato{
+    padding: 9px 25px;
+    background-color:#8B008B;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 40px;
+    margin-left: -20px;
+}
+button#contato:hover{
+    background-color: #228B22;
+}
+#icone{
+    display: inline-block;
+    margin-left: 5px;
+    height: 35px;
+}
+#icone:hover{
+    transform: scale(1.4);
+    transition: 0.2s;
+    cursor: pointer;
+}
+img#logo{
+    margin-top: -15px;
+    width: 140px;
+    height: 80px;
+    border-radius: 5px;
+}
+ul ul{
+    position: absolute;
+    margin-top: 10px;
+    display: none;
+}
+ul ul li{
+    display: block;
+    background: rgb(122, 15, 122);
+    width: 150px;
+    padding: 5px 8px;
+}
+ul ul li:hover{
+    background-color: rgb(92, 22, 92);
+}
+ul ul li:hover .b{
+    background-color: rgb(92, 22, 92);
+}
+
+ul ul li .b{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    
+    font-size: 10pt;
+    text-decoration: none;
+    background: rgb(122, 15, 122);
+}
+ul li:hover ul{
+    display: block;
+}
+
+/*Fim do cabeçalho*/
+
+#body {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+#slider{
+    width: 100%;
+    height: 70vw;
+    max-height: 530px;
+    position: relative;
+    margin-bottom: 10px;
+    background: #5a0e5859;
+}
+#slider img{
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    margin-left: 10%;
+    opacity: 0;
+    transition: opacity 800ms;
+}
+#slider .selected{
+    opacity: 1;
+}
+
+/*Fim do slide de imagens*/
+
+
+
+.column {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    position: relative;
+    left: 15px;
+    border-top: #7A246F 2px dashed;
+    margin-left: 15px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media (min-width: 200px) and (max-width: 600px) { 
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .column {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 90%;
+        padding: 15px;
+        border-top: none;
+    }
+}
+#dep{
+    width: 26%;
+}
+.column h2{
+    color: #8B008B;
+    font-size: 14pt;
+    border-left: #8B008B 8px solid;
+}
+img#bottom{
+    border: solid 1px black;
+}
+.conteudo{
+    display: table;
+    padding: 4px 2px 5px 0px;
+}
+.imagemdiv{
+    display: table-cell;
+    float: left;
+    margin-top: 6px;
+}
+.textodiv{
+    display: table-cell;
+    float: left;
+    width: 282px; 
+    font-size: 11pt;
+}
+
+p#mainl{
+    margin-top: 4px;
+    font-size: 11pt;
+}
+.column p{
+    color:#666666
+}
+#TA_cdsratingsonlynarrow493{
+    margin-top: 10px;
+}
+#footerp{
+    background-color: #7A246F;
+    padding: 15px 0px 15px;
+    width: 100%;
+    color: white;
+    font: 12px Helvetica, Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Fim da Home */
+
+/* A Pousada*/
+
+h1.titlepage{
+    background-color: #7a246f;
+    padding: 25px 0px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 150px;
+    margin-bottom: 30px;
+}
+
+#articlepousada{
+    width: 900px;
+    color: #414040;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    text-align: justify;
+    height: 500px;
+}
+#articlepousada p{
+    margin-bottom: 10px;
+}
+#articlelocalizacao{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    margin: auto;
+
+    font-family: system-ui;
+}
+#articlelocalizacao p{
+    color: #414040;
+    margin-bottom: 10px;
+}
+section#mapa{
+    margin: 20px;
+    border: #228B22 1px solid;
+}
+.bolder{
+    color: #228B22;
+}
+h3.adicionais{
+    margin-bottom: 10px;
+}
+ul.addlist li{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.add{
+    float: left;
+    margin-bottom: 100px;
+}
+.first{
+    margin-right: 200px;
+}
+#menu {
+    display: none;
+}
+@media(max-width: 1187px){
+    #logo {
+        display: none;
+    }
+}
+@media(max-width: 739px){
+    .main a,
+    #icone {
+        display: none;
+    }
+    #menu {
+        display: block;
+        margin-left: 10px;
+    }
+    header{
+        padding: 20px 0px;
+        
+    }
+}

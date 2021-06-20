@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada A Vida É Bela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+      /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(87, 8, 107); 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b722e4; 
+}
+</style>
+<body>
+    <div class="menu_container">
+        <img src="imgs/close.svg" class="close" alt="Fechar">
+            <a href="home.html">Home</a>
+            <a href="pousada.html">A Pousada</a>
+            <a href="localizacao.html">Localização</a>
+            <a href="fotos.html">Fotos</a>
+    </div>
+    <header>
+        <img id ="logo" src="imgs/pousadalogop.png" alt="">
+        <img src="imgs/menu.svg" id="menu">
+        <nav>
+
+            <ul class="nav_links">
+                <li class="main"><a class ="a" href="home.html">Home</a></li>
+                <li class="main"><a class ="a" href="pousada.html">A Pousada</a></li>
+                <li class="main"><a class ="a" href="localizacao.html">Localização</a></li>
+                <li class="main"><a class ="a" href="fotos.html">Fotos</a>
+                    <ul>
+                
+                    <li class ="liop"><a class ="b" href="fotos_pousada.html">A Pousada</a></li>
+                    <li class ="liop"><a class ="b" href="fotos_praia.html">Águas Belas</a></li>
+                
+                
+                </ul>
+                </li>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="redes">
+            <a href="https://www.facebook.com/www.pousadaavidaebela.com.br/" target="blank"><img id="icone" src="imgs/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/pousadaavidaebela/?hl=pt-br" target="blank"><img id="icone" src="imgs/instagram.png" alt=""></a>
+        </div>
+    </header>
+    
+    <div id="body">
+        <div id="slider">
+        <img class="selected" src="imgs/pousada1.jpeg">
+        <img src="imgs/pousada2.jpg">
+        <img src="imgs/pousada3.jpg">
+        <img src="imgs/pousada4.jpg">
+        <img src="imgs/pousada5.jpeg">
+        <img src="imgs/pousada6.jpeg">
+        <img src="imgs/pousada7.jpeg">
+        <img src="imgs/pousada8.jpeg">
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <section id="bottom">
+
+        <div class="row">
+            <div class="column">
+              <h2>&nbsp;A Pousada</h2>
+                <div class="conteudo">
+                <div class="imagemdiv">
+              <img id="bottom" src="imgs/pousada_thumb.jpg">
+                </div>
+                <div class="textodiv">
+                <p class="pousadap"> Excelente localização na praia de Águas Belas, a 20 metros da praia em ambiente reservado, tranquilo, aconchegante e familiar.
+                Restaurante aberto ao público. Venha passar o dia conosco! Pets são bem-vindos!!!!</p>
+                </div>
+            </div>
+        </div>
+            <div class="column">
+              <h2>&nbsp;Localização</h2>
+              
+              <p id="mainl">Localizada na praia de Águas Belas ( litoral leste ), a 60 km de Fortaleza , sentido as praias de Morro Branco ( 25kms ) e Canoa Quebrada ( 90kms )
+                Saiba Mais</p>
+            
+            </div>
+            
+            <div class="column" id="dep">
+              <h2>&nbsp;Depoimentos</h2>
+              <div id="TA_cdsratingsonlynarrow493" class="TA_cdsratingsonlynarrow"><ul id="Ml5DDCB" class="TA_links grg9Q0WbTGF"><li id="cHteWHs" class="mAAxd3tMks"><a target="_blank" href="https://www.tripadvisor.com.br/Hotel_Review-g2444736-d5001986-Reviews-A_Vida_e_Bela_Pousada_e_Restaurante-Aguas_Belas_Cascavel_State_of_Ceara.html"><img src="https://www.tripadvisor.com.br/img/cdsi/img2/branding/v2/Tripadvisor_lockup_horizontal_secondary_registered-18034-2.svg" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=493&amp;locationId=5001986&amp;lang=pt&amp;border=true&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
+
+          </div>
+    </section>
+    
+    
+    <footer id="footer"><p id="footerp">© 2012 Pousada e Restaurante a Vida é Bela. All Rights Reserved.</p></footer>
+<script>
+    const catalogo = document.querySelector('.menu_container')
+    const fechar = document.querySelector('.close')
+    const link = document.querySelector('#menu')
+    
+    fechar.addEventListener('click',()=>{
+        catalogo.classList.toggle('on')
+    })
+    link.addEventListener('click',()=>{
+        catalogo.classList.toggle('on')
+    })
+    
+</script>
+</body>
+</html>
